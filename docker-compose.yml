@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  newcp:
+    image: newcp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5012:5012
